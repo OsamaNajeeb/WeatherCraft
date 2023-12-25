@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "883529098185",
+    "project_id": "weathercraftxt",
+    "storage_bucket": "weathercraftxt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883529098185:android:de272f75863545a90b3e18",
+        "android_client_info": {
+          "package_name": "com.example.weathercraft"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRmqgtIP4UnzHWb8oJ_w5YODoBUOxcDNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
