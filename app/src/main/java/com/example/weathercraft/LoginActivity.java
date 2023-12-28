@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
 
     EditText userET, passET;
     TextView redirectRegistTV;
-    Button loginBTN;
+    Button loginBTN, loginAdminBTN;
 
     FirebaseAuth ah;
 
@@ -34,6 +34,7 @@ public class LoginActivity extends AppCompatActivity {
         userET = findViewById(R.id.etUsername);
         passET = findViewById(R.id.etPassword);
         loginBTN = findViewById(R.id.btnLogin);
+        loginAdminBTN = findViewById(R.id.btnAdminLog);
         ah = FirebaseAuth.getInstance();
 
         redirectRegistTV = findViewById(R.id.tvRegister);
@@ -75,6 +76,14 @@ public class LoginActivity extends AppCompatActivity {
                                 }
                             }
                         });
+            }
+        });
+
+        loginAdminBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginActivity.this, LoginAdminActivity.class));
+                finish();
             }
         });
 

@@ -60,7 +60,6 @@ public class RegistrationActivity extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
 
-                                    FirebaseUser user = ah.getCurrentUser();
                                     Toast.makeText(RegistrationActivity.this, "Account Created.",
                                             Toast.LENGTH_SHORT).show();
                                     startActivity(new Intent(RegistrationActivity.this, LoginActivity.class));

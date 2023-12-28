@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="API CRUD"
+                android:textAlignment="center"
+                android:textSize="40sp"
+                android:textColor="@color/text_color"
+                android:layout_marginBottom="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="64dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="API ID"
+                    android:textSize="20sp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/text_color"/>
+
+                <EditText
+                    android:id="@+id/etID"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_bg_shape"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:hint="Enter API ID"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City"
+                    android:textSize="20sp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/text_color"/>
+
+                <EditText
+                    android:id="@+id/etLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_bg_shape"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:hint="Enter City"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:textSize="20sp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/text_color"/>
+                <EditText
+                    android:id="@+id/etUpdateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_bg_shape"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:hint="Enter Time"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textSize="20sp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/text_color"/>
+                <EditText
+                    android:id="@+id/etStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_bg_shape"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:hint="Enter Status"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temperature"
+                    android:textSize="20sp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/text_color"/>
+                <EditText
+                    android:id="@+id/etTemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_bg_shape"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:hint="Enter Temperature"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Min Temp"
+                    android:textSize="20sp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/text_color"/>
+                <EditText
+                    android:id="@+id/etMinTemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_bg_shape"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:hint="Enter Minimum Temperature"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Max Temp"
+                    android:textSize="20sp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/text_color"/>
+                <EditText
+                    android:id="@+id/etMaxTemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_bg_shape"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:hint="Enter Maximum Temperature"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feel Temp"
+                    android:textSize="20sp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/text_color"/>
+                <EditText
+                    android:id="@+id/etFeel"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_bg_shape"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:hint="Enter Feels Like Temperature"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sunrise"
+                    android:textSize="20sp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/text_color"/>
+                <EditText
+                    android:id="@+id/etSunrise"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_bg_shape"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:hint="Enter Sunrise Time"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sunset"
+                    android:textSize="20sp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/text_color"/>
+                <EditText
+                    android:id="@+id/etSunset"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_bg_shape"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:hint="Enter Sunset Time"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wind Speed"
+                    android:textSize="20sp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/text_color"/>
+                <EditText
+                    android:id="@+id/etWind"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_bg_shape"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:hint="Enter Wind Speed"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pressure"
+                    android:textSize="20sp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/text_color"/>
+                <EditText
+                    android:id="@+id/etPressure"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_bg_shape"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:hint="Enter Pressure"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Humidity"
+                    android:textSize="20sp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/text_color"/>
+                <EditText
+                    android:id="@+id/etHumidity"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_bg_shape"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:hint="Enter Humidity"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sea LVL"
+                    android:textSize="20sp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/text_color"/>
+                <EditText
+                    android:id="@+id/etSea"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_bg_shape"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:hint="Enter Sea Level"
+                    android:textSize="18sp"
+                    android:paddingStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/btnInsert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Insert"
+                    android:layout_marginRight="8dp"/>
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"/>
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/btnClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Close"
+                    android:layout_marginRight="8dp"/>
+                <Button
+                    android:id="@+id/btnReset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clear"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"/>
+                <Button
+                    android:id="@+id/btnGet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Retrieve"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

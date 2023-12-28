@@ -47,7 +47,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:ems="10"
-            android:inputType="text"
+            android:inputType="textPassword"
             android:text=""
             android:hint="Enter Password"
             android:textSize="18sp"
@@ -64,18 +64,30 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="64dp"
             android:backgroundTint="@color/white"
-            android:text="Login"
+            android:text="Login as User"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+        <Button
+            android:id="@+id/btnAdminLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/white"
+            android:text="Login as Admin"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
         <TextView
             android:id="@+id/tvRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="32dp"
             android:text="Don't have an Account?\nClick Here"
             android:textSize="20sp"
             android:clickable="true"
@@ -84,7 +96,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+            app:layout_constraintTop_toBottomOf="@+id/btnAdminLog" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
