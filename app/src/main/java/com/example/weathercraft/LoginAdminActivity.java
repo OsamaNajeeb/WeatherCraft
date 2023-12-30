@@ -29,13 +29,13 @@ public class LoginAdminActivity extends AppCompatActivity {
                 String userInput = userET.getText().toString();
                 String passInput = passET.getText().toString();
 
-                if (TextUtils.isEmpty(userInput) || !userInput.equals("Osama@gmail.com")) {
+                if (TextUtils.isEmpty(userInput) || !userInput.equals("Osama")) {
                     Toast.makeText(LoginAdminActivity.this, "Please enter a valid email",
                             Toast.LENGTH_LONG).show();
                     return;
                 }
 
-                if (TextUtils.isEmpty(passInput) || !passInput.equals("12345@")) {
+                if (TextUtils.isEmpty(passInput) || !passInput.equals("123")) {
                     Toast.makeText(LoginAdminActivity.this, "Please enter a valid password",
                             Toast.LENGTH_LONG).show();
                     return;
